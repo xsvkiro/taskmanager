@@ -1,16 +1,19 @@
 import {createElement} from './render.js';
 
-const createBoardTemplate = () => {
-  return `<section class="board container"></section>`;
+const createTasksTemplate = () => {
+  return (
+    `<div class="board__tasks"></div>`
+  );
 };
 
-export default class Board {
+
+export default class Tasks {
   constructor() {
     this._element = null;
   }
 
   getTemplate() {
-    return createBoardTemplate();
+    return createTasksTemplate();
   }
 
   getElement() {
